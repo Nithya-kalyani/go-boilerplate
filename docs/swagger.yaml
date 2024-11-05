@@ -1,0 +1,21 @@
+info:
+  contact: {}
+paths:
+  /user/list:
+    get:
+      description: Get a list of all users
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              additionalProperties:
+                type: string
+              type: object
+            type: array
+      summary: List Users
+      tags:
+      - User
+swagger: "2.0"
